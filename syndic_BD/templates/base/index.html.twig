@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Syndic {% endblock %}
+  {% block liItem0 %}
+     <a class="nav-link  text-primary " href="#"> Personnels </a>
+ {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-primary " href="#"> Maisons </a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link  text-primary " href="#"> <i class="far fa-sign-in-alt" style="color:#2968AD"></i></a>
+{% endblock %}
+
+
+ {% block stylesheets %}
+ <style>
+     @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+     main {
+         background-image : url("cover2.jpg") ;
+         background-size: cover;
+         /*background-color:black;*/
+         background-repeat: no-repeat;
+         background-position: center;
+         opacity: 0.9;
+     }
+     .box{
+         height :200px ;
+         /*max-height: 100px;*/
+         background-color:  var(--navColor);
+         opacity: 0.8;
+
+     }
+     .about{
+         height: 200px;
+         width : 100%;
+         background-color: var(--navLight);
+     }
+     .text-center{
+         color:white;
+         margin-top: 85px;
+         font-family: 'Unna', serif;
+     }
+     .box:hover{
+         font-size: 1.75rem;
+         height :220px ;
+         width: 500px;
+     }
+ </style>{% endblock %}
+{% block body %}
+
+    <main>
+        <div class="container-fluid">
+            <div class="container-fluid" style=" height : 200px">
+
+            </div>
+            <div class="container-fluid" style=" height : 300px">
+                <div class="row">
+                    <div class="col-3" ></div>
+                    <div class="col-3 box" style="margin-right: 10px"> <p class="text-center">PAIEMENT</p></div>
+
+                    <div class="col-3 col-md-offset-2 box" ><p class="text-center">CAISSE</p></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid about ">
+{#   <p>  A propos</p>#}
+        </div>
+    </main>
+
+{% endblock %}
