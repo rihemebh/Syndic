@@ -1,0 +1,163 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Maisons {% endblock %}
+
+  {% block liItem0 %}
+      <a class="nav-link text-primary  " href="/base"><i class="fad fa-home-alt"></i> </a>
+  {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-primary" href="#">Personnels</a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link text-primary  " href="#"> Caisse</a>
+{% endblock %}
+ {% block stylesheets %}
+     <style>
+
+         .slider {
+             position: absolute;
+             cursor: pointer;
+             top: 0;
+             left: 0;
+             right: 0;
+             bottom: 0;
+             background-color: #ccc;
+             -webkit-transition: .4s;
+             transition: .4s;
+         }
+
+         .slider:before {
+             position: absolute;
+             content: "";
+             height: 20px;
+             width: 20px;
+             left: 3px;
+             bottom: 4px;
+             background-color: white;
+             -webkit-transition: .4s;
+             transition: .4s;
+         }
+
+         input:checked + .slider {
+             background-color: #2196F3;
+         }
+
+         input:focus + .slider {
+             box-shadow: 0 0 1px #2196F3;
+         }
+
+         input:checked + .slider:before {
+             -webkit-transform: translateX(20px);
+             -ms-transform: translateX(20px);
+             transform: translateX(20px);
+         }
+         .switch {
+             position: relative;
+             display: inline-block;
+             width: 45px;
+             height: 27px;
+         }
+
+         .switch input {
+             opacity: 0;
+             width: 0;
+             height: 0;
+         }
+         .slider.round {
+             border-radius: 34px;
+         }
+
+         .slider.round:before {
+             border-radius: 50%;
+         }
+         .cont {
+             display: flex;
+         }
+
+         .input {
+             flex: 1;
+
+         }
+.search{
+    margin-left: 5px;
+}
+     </style>
+ {% endblock %}
+
+{% block body %}
+    <div style="height:5px">
+
+    </div>
+    <main >
+
+
+                <div class="jumbotron jumbotron-fluid" style="background-image: url('buil.jpg'); background-size: 100%, 100%;
+background-color: rgb(0,0,255,0.25); background-blend-mode: overlay; height:300px">
+                    <div class="container">
+                        <h4 class="display-6 " style="color:WHITE"  >  <i class="fas fa-search small " ></i> Chercher</h4>
+
+                                    <div class="form-row cont container bg-white" style="border-radius: 20px 20px">
+                                        <input type="email" class="form-control input " style="border: none" id="email">
+                                        <a href="#" class="search"><i class="fas fa-search  search" style="color:var(--navColor); margin-top: 15px" ></i></a>
+                                    </div>
+
+                    </div>
+                </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                <div class="float-right">
+                    <a href="#" class="btn border-dark btn-light">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <table class="table table-responsive-sm table-bordered" id="table">
+            <thead>
+            <tr>
+                <th scope="col">Num appart</th>
+                <th scope="col">Num immeuble</th>
+                <th scope="col">proprietaire</th>
+                <th scope="col">prix 1</th>
+                <th scope="col">prix 2 </th>
+                <th scope="col">prix 3</th>
+                <th scope="col">dette</th>
+                <th scope="col">payé?</th>
+
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>Otto</td>
+                <td>Otto</td>
+                <td>Otto</td>
+                <td>Otto</td>
+                <td>
+                  <a href="#">voir paiement</a>
+{#                    <label class="switch">#}
+{#                        <input type="checkbox" checked>#}
+{#                        <span class="slider round"></span>#}
+{#                    </label>#}
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </main>
+{% endblock %}
+{% block javascripts %}
+{#    <script>#}
+{#        $(document).ready(function() {#}
+{#            $('#table').DataTable();#}
+{#        } );#}
+{#    </script>#}
+{% endblock %}

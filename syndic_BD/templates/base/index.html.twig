@@ -2,82 +2,75 @@
 
 {% block title %}Syndic {% endblock %}
   {% block liItem0 %}
-      <a class="nav-link  text-white " href="#"> Personnels </a>
+      <a class="nav-link text-primary  " href="/workers"> Personnels </a>
   {% endblock %}
  {% block liItem1 %}
-     <a class="nav-link  text-white " href="#"> Maisons </a>
+     <a class="nav-link text-primary " href="/houses"> Maisons </a>
  {% endblock %}
 {% block liItem2 %}
-    <a class="nav-link  text-primary " href="#"> <i class="far fa-sign-in-alt" style="color:white"></i></a>
+    <a class="nav-link  text-primary " href="#"> <i class="far fa-sign-in-alt" ></i></a>
 {% endblock %}
 
 
  {% block stylesheets %}
-     <style>
-         @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+    body {
+        background-image: url("3.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.9;
 
-         body {
-             background-image: url("cover.jpg");
-             background-size: cover;
-             background-repeat: no-repeat;
-             background-position: center;
+    }
+    .text:hover{
+       font-size:200%;
 
-         }
-
-         .box {
-             height: 150px;
-             /*max-height: 100px;*/
-             background-color: var(--navColor);
-             opacity: 0.8;
-
-         }
-
-.btn{
-    background: linear-gradient(to bottom, #9ac5e7 1%, #2968ad 86%);
-    border: none;
-    border-radius:50px 20px;
-}
-
-         .btn:hover {
-             font-size: 1.25rem;
-
-
-         }
-     </style>{% endblock %}
+    }
+    .text{
+        font-family: 'EB Garamond', serif;
+        font-size: 160%;
+        margin-top:60px
+    }
+    .box{
+    height: 180px;
+        background-color: white;
+        opacity: 0.5;
+        border-radius: 8px 8px;
+        box-shadow: 5px 5px 5px 5px black;
+    }
+    .box:hover{
+        height: 200px;
+        opacity:0.7;
+    }
+    </style>
+{% endblock %}
 {% block body %}
-
-    <main>
-        <div class="container-fluid">
-            <div class="container-fluid" style=" height : 350px">
-
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-3">
-                        <button class="btn-info w-100 btn float-right">Paiement</button>
-                        <br>
-                    </div>
-
-
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-3">
-                        <button class="btn-info btn w-100 float-right">Caisse</button>
-                        <br>
-                    </div>
-
-
-                </div>
+    <div style="height: 200px"></div>
+    <div class="container-fluid" style="height: 400px">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3  box" style="margin-right:10px;">
+<a href="#" class="text-primary nav-link text-center text" ><b>Paiement</b></a>
+    </div>
+            <div class="col-3 box" >
+                <a href="#" class="text-primary nav-link text-center text"><b>Caisse</b></a>
 
             </div>
+            <div class="col-3"></div>
+        </div></div>
+{#    <div class="jumbotron jumbotron-fluid" style="background-image: url('4.jpg'); background-size: 100%, 100%;#}
+{#opacity:0.5; height:500px">#}
+{#        <div class="container">#}
+{#            <h4 class="display-8 " style="color:WHITE"  >  Syndic</h4>#}
+
+{#            <div class="form-row cont container">#}
+{#                <input type="email" class="form-control input" id="email">#}
+{#                <a href="#" class="search"><i class="fas fa-search  search" style="color:WHITE" ></i></a>#}
+{#            </div>#}
 
         </div>
-
-        </div>
-        {#        <div class="container-fluid about ">#}
-        {#   <p>  A propos</p>#}
-        {#        </div>#}
-    </main>
+    </div>
 
 {% endblock %}

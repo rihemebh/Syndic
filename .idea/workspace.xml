@@ -1,26 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adf0e994-eb14-4e16-898c-2d014cf16e30" name="Default Changelist" comment="" />
+    <list default="true" id="adf0e994-eb14-4e16-898c-2d014cf16e30" name="Default Changelist" comment="cover">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/buil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/cover1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/jumb.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/jumb1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/pp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/src/Controller/housesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/src/Controller/workerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/templates/houses/houses.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/templates/staff/worker.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/syndic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/syndic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/syndic_BD/public/cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/syndic_BD/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/syndic_BD/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/syndic_BD/templates/base/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/syndic_BD/templates/base/index.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/syndic_BD/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/notifier" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/twig/extra-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/composer" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1ev5SzIqpvyb13bZ7CGseoafgUT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/syndic_BD/public" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Syndic\syndic_BD\public" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,16 +181,62 @@
       <updated>1595189229400</updated>
       <workItem from="1595189233249" duration="506000" />
       <workItem from="1596387444219" duration="1215000" />
+      <workItem from="1596388921266" duration="631000" />
+      <workItem from="1597957962518" duration="1766000" />
+      <workItem from="1598446692381" duration="16579000" />
+      <workItem from="1598906550085" duration="2324000" />
+      <workItem from="1598958961981" duration="10005000" />
+      <workItem from="1599136838612" duration="11703000" />
+      <workItem from="1599170364130" duration="8192000" />
+      <workItem from="1599402919174" duration="5444000" />
+      <workItem from="1599414464773" duration="5146000" />
     </task>
+    <task id="LOCAL-00001" summary="nav+background">
+      <created>1598959099404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598959099404</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cover">
+      <created>1598996118335</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598996118335</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="nav+background" />
+    <MESSAGE value="cover" />
+    <option name="LAST_COMMIT_MESSAGE" value="cover" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1598996111997">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1598996111997" />
     <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1596388684224">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1596388684224" />
+    <state x="450" y="87" key="NewPhpClassDialog" timestamp="1599174138306">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="450" y="87" key="NewPhpClassDialog/0.0.1360.728@0.0.1360.728" timestamp="1599174138306" />
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598996128608">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1598996128608" />
+    <state x="336" y="162" key="run.anything.popup" timestamp="1599174206223">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="336" y="162" key="run.anything.popup/0.0.1360.728@0.0.1360.728" timestamp="1599174206223" />
   </component>
 </project>

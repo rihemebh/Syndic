@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Personnels{% endblock %}
+
+  {% block liItem0 %}
+      <a class="nav-link text-primary  " href="/base"><i class="fad fa-home-alt"></i> </a>
+  {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-primary" href="#">Maisons</a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link text-primary  " href="#"> Caisse</a>
+{% endblock %}
+ {% block stylesheets %}
+     <style>
+         main {
+
+         }
+     </style>
+ {% endblock %}
+
+{% block body %}
+    <div style="height:5px">
+
+    </div>
+    <main >
+
+
+        <div class="jumbotron jumbotron-fluid" style="background-image: url('jumb1.jpeg'); background-size: 100%;
+background-color: rgb(0,0,255,0.25); background-blend-mode: overlay;">
+            <div class="container">
+                <h1 class="display-4 text-center "style="color:WHITE"  ><b>PERSONNELS</b></h1>
+                {#                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>#}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 " >
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 bg-white shadow" style=" margin-left: 15px; border-radius: 20px 20px">
+                            <p class=" text-center btn-link" style="margin-top:10px"><i class="fas fa-plus"></i> Ajout </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 bg-white shadow" style="margin-left: 15px; margin-top:10px; border-radius: 20px 20px">
+                            <p ><i class="fas fa-search"></i> Chercher </p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col">
+
+
+                            <div class="card " style="width: 15rem; margin-left: 10px; ">
+                                <div class="card-body">
+                                    <h5 class="card-title">nom et prenom</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted"> khedmtou</h6>
+                                    <p class="card-text">Some quick example text </p>
+                                    <a href="#" class="btn btn-sm btn-info small"
+                                       style="width:5.5rem; border-radius: 20px 20px">Détailles</a>
+                                    <a href="#" class="btn btn-sm btn-danger smaller"
+                                       style="width:5.5rem;margin-top:4px; border-radius: 20px 20px">Supprimer</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+{% endblock %}
