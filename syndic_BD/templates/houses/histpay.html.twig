@@ -1,0 +1,283 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}historique paiement{% endblock %}
+
+  {% block liItem0 %}
+      <a class="nav-link text-primary  " href="/base"><i class="fad fa-home-alt"></i> </a>
+  {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-primary" href="/workers">Personnels</a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link text-primary  " href="#"> Maisons</a>
+{% endblock %}
+{% block stylesheets %}
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 20px;
+            width: 20px;
+            left: 3px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(20px);
+            -ms-transform: translateX(20px);
+            transform: translateX(20px);
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 45px;
+            height: 27px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+.lead{
+    font-family: 'EB Garamond', serif;
+}
+        .cont {
+            display: flex;
+        }
+
+        .input {
+            flex: 1;
+
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    <div class="jumbotron jumbotron-fluid shadow" style="background-image: url('money.jpeg'); background-size: 100% 100%;
+background-color: var(--navColor); background-blend-mode: overlay; height:300px">
+        <div class="container">
+            <h1 class="display-4 "style="color:WHITE"  ><b>Hitorique de paiement</b></h1>
+                                    <p class="lead" style="color:WHITE">Appartement I immeuble I
+                                    <br> M. </p>
+
+
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-7">
+
+                <div class="form-row cont container border-dark" style="border-radius: 20px 20px">
+                    <input type="email" class="form-control input shadow"  id="email" placeholder="trouver une année">
+                    <a href="#" class="search "><i class="fas fa-search  shadow search" style="color:var(--navColor); margin-top: 15px" ></i></a>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="float-right">
+                    <a href="#" class="btn border-dark btn-white">
+                        <i class="fas fa-sort-amount-up-alt  float-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+    <br>
+    <table class="table table-responsive-sm table-bordered" id="table">
+        <thead>
+        <tr class="">
+            <th scope="col" class="shadow page-link">2001 <a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col " class="shadow page-link">2002 <a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link">2003 <a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link">2004 <a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link">2005<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link">2006<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col"class="shadow page-link">2007<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link">2008<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link">2009<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col"class="shadow page-link">2010<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+{#            <th scope="row">#}
+{#                                    <label class="switch">#}
+{#                                        <input type="checkbox" checked>#}
+{#                                        <span class="slider round"></span>#}
+{#                                    </label>#}
+{#            </th>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+
+{#                                    <label class="switch">#}
+{#                                        <input type="checkbox" checked>#}
+{#                                        <span class="slider round"></span>#}
+{#                                    </label>#}
+{#            </td>#}
+{#            <td>#}
+
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label>#}
+{#            </td>#}
+{#            <td>#}
+
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label>#}
+{#            </td>#}
+{#        </tr>#}
+
+        </tbody>
+    </table>
+    <br>
+{#    <table class="table table-responsive-sm table-bordered" id="table">#}
+{#        <thead>#}
+{#        <tr>#}
+{#            <th scope="col">2011</th>#}
+{#            <th scope="col">2012</th>#}
+{#            <th scope="col">2013</th>#}
+{#            <th scope="col">2014</th>#}
+{#            <th scope="col">2015</th>#}
+{#            <th scope="col">2016</th>#}
+{#            <th scope="col">2017</th>#}
+{#            <th scope="col">2018</th>#}
+{#            <th scope="col">2019</th>#}
+{#            <th scope="col">2020</th>#}
+
+
+{#        </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#        <tr>#}
+{#            <th scope="row">#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label>#}
+{#            </th>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label> </td>#}
+{#            <td>#}
+
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label>#}
+{#            </td>#}
+{#            <td>#}
+
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label>#}
+{#            </td>#}
+{#            <td>#}
+
+{#                <label class="switch">#}
+{#                    <input type="checkbox" checked>#}
+{#                    <span class="slider round"></span>#}
+{#                </label>#}
+{#            </td>#}
+{#        </tr>#}
+
+{#        </tbody>#}
+{#    </table>#}
+{% endblock %}

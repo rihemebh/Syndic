@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adf0e994-eb14-4e16-898c-2d014cf16e30" name="Default Changelist" comment="cover">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/public/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/public/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/public/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/public/buil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/public/cover1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/public/jumb.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/public/jumb1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/public/pp.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/src/Controller/housesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/src/Controller/workerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/templates/houses/houses.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/syndic_BD/templates/staff/worker.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/syndic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/syndic.iml" afterDir="false" />
+    <list default="true" id="adf0e994-eb14-4e16-898c-2d014cf16e30" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/money.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/money1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/public/workers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/src/Controller/histController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/src/Controller/payMonthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/templates/houses/histpay.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/syndic_BD/templates/houses/payMonth.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/syndic_BD/public/cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/syndic_BD/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/syndic_BD/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/syndic_BD/templates/base/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/syndic_BD/templates/base/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/syndic_BD/templates/houses/houses.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/syndic_BD/templates/houses/houses.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/syndic_BD/templates/staff/worker.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/syndic_BD/templates/staff/worker.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +155,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Syndic\syndic_BD\templates\houses" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Syndic\syndic_BD\public" />
     </key>
@@ -189,7 +182,7 @@
       <workItem from="1599136838612" duration="11703000" />
       <workItem from="1599170364130" duration="8192000" />
       <workItem from="1599402919174" duration="5444000" />
-      <workItem from="1599414464773" duration="5146000" />
+      <workItem from="1599414464773" duration="12511000" />
     </task>
     <task id="LOCAL-00001" summary="nav+background">
       <created>1598959099404</created>
@@ -205,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598996118335</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="modif design">
+      <created>1599420144982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599420144982</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,25 +215,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="nav+background" />
     <MESSAGE value="cover" />
-    <option name="LAST_COMMIT_MESSAGE" value="cover" />
+    <MESSAGE value="modif design" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif design" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1598996111997">
+    <state x="305" y="0" key="CommitChangelistDialog2" timestamp="1599420135413">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1598996111997" />
+    <state x="305" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1599420135413" />
     <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1596388684224">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1596388684224" />
-    <state x="450" y="87" key="NewPhpClassDialog" timestamp="1599174138306">
+    <state x="450" y="87" key="NewPhpClassDialog" timestamp="1599426694944">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="450" y="87" key="NewPhpClassDialog/0.0.1360.728@0.0.1360.728" timestamp="1599174138306" />
-    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1598996128608">
+    <state x="450" y="87" key="NewPhpClassDialog/0.0.1360.728@0.0.1360.728" timestamp="1599426694944" />
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1599420160000">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1598996128608" />
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1599420160000" />
     <state x="336" y="162" key="run.anything.popup" timestamp="1599174206223">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
