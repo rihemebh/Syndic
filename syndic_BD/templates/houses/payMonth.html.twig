@@ -1,0 +1,231 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}historique paiement{% endblock %}
+
+  {% block liItem0 %}
+      <a class="nav-link text-primary  " href="/base"><i class="fad fa-home-alt"></i> </a>
+  {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-primary" href="/workers">Personnels</a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link text-primary  " href="/houses#"> Maisons</a>
+{% endblock %}
+
+ {% block stylesheets %}
+<style>
+    .card{
+        margin-top: 21px;
+        margin-right: 20px;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 3px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 27px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    </style>
+{% endblock %}
+{% block body %}
+    <div class="container" style="height: 50px;"></div>
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow-sm bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Janvier</h5>
+                        <p class="card-text">  <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light shadow-sm border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Fevrier</h5>
+
+                        <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Mars</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Avril</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Mai</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">juin</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">juillet</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Aout</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Septembre</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">October</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Novembre</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-light border-light" style="width:9rem;">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Decembre</h5>
+                        <p class="card-text"> <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
