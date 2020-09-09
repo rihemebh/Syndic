@@ -3,13 +3,13 @@
 {% block title %}historique paiement{% endblock %}
 
   {% block liItem0 %}
-      <a class="nav-link text-primary  " href="/base"><i class="fad fa-home-alt"></i> </a>
+      <a class="nav-link text-dark  " href="/base"><i class="fad fa-home-alt"></i> </a>
   {% endblock %}
  {% block liItem1 %}
-     <a class="nav-link  text-primary" href="/workers">Personnels</a>
+     <a class="nav-link  text-dark" href="/workers">Personnels</a>
  {% endblock %}
 {% block liItem2 %}
-    <a class="nav-link text-primary  " href="#"> Maisons</a>
+    <a class="nav-link text-dark  " href="#"> Maisons</a>
 {% endblock %}
 {% block stylesheets %}
     <style>
@@ -83,19 +83,34 @@
             flex: 1;
 
         }
+        #retour{
+            margin-top : -20px ;
+            margin-left:30px;
+            margin-bottom: -5px;
+        }
     </style>
 {% endblock %}
 {% block body %}
-    <div class="jumbotron jumbotron-fluid shadow" style="background-image: url('money.jpeg'); background-size: 100% 100%;
-background-color: var(--navColor); background-blend-mode: overlay; height:300px">
+    <div class="container-fluid " >
+        <hr style="margin-top: 0">
+        <a href="/houses" class="text-dark" id="retour">Maisons</a>
+        <i class="fas fa-angle-right smaller" ></i>
+        <a href="/histPay" class="text-dark">  Historique de paiement</a>
+
+        <hr style="margin-bottom: 1.8rem; ">
+    </div>
+
+    <div class="jumbotron jumbotron-fluid shadow" style="background-image: url('money3.jpg'); background-size: 100%;
+background-color: rgb(0,0,0,0.3); background-blend-mode: overlay; height:250px">
         <div class="container">
-            <h1 class="display-4 "style="color:WHITE"  ><b>Hitorique de paiement</b></h1>
-                                    <p class="lead" style="color:WHITE">Appartement I immeuble I
-                                    <br> M. </p>
+            <h1 class="display-4 lead "style="color:WHITE"  ><b>Appartement I immeuble I</b></h1>
+                                    <p class="lead" style="color:WHITE">
+                                     M. </p>
 
 
     </div>
     </div>
+    <hr>
     <div class="container">
         <div class="row">
             <div class="col-2"></div>
@@ -123,16 +138,16 @@ background-color: var(--navColor); background-blend-mode: overlay; height:300px"
     <table class="table table-responsive-sm table-bordered" id="table">
         <thead>
         <tr class="">
-            <th scope="col" class="shadow page-link"> <a href="/month">2001 <i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col " class="shadow page-link">2002 <a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link">2003 <a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link">2004 <a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link">2005<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link">2006<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link">2007<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link">2008<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link">2009<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link">2010<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link " > <a href="/month" class="text-dark">2001 <i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col " class="shadow page-link"> <a href="/month" class="text-dark">2002<i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link"> <a href="/month" class="text-dark">2003<i class="fas fa-angle-double-right float-right"></i></a></th>
+            <th scope="col" class="shadow page-link"> <a href="/month" class="text-dark">2004<i class="fas fa-angle-double-right float-right"></i></a></th>
+{#            <th scope="col" class="shadow page-link">2005<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
+{#            <th scope="col" class="shadow page-link">2006<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
+{#            <th scope="col" class="shadow page-link">2007<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
+{#            <th scope="col" class="shadow page-link">2008<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
+{#            <th scope="col" class="shadow page-link">2009<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
+{#            <th scope="col" class="shadow page-link">2010<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
 
 
         </tr>

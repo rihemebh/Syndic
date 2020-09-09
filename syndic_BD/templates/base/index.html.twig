@@ -2,13 +2,13 @@
 
 {% block title %}Syndic {% endblock %}
   {% block liItem0 %}
-      <a class="nav-link text-primary  " href="/workers"> Personnels </a>
+      <a class="nav-link text-dark  " href="/workers"> Personnels </a>
   {% endblock %}
  {% block liItem1 %}
-     <a class="nav-link text-primary " href="/houses"> Maisons </a>
+     <a class="nav-link text-dark " href="/houses"> Maisons </a>
  {% endblock %}
 {% block liItem2 %}
-    <a class="nav-link  text-primary " href="#"> <i class="far fa-sign-in-alt" ></i></a>
+    <a class="nav-link  text-dark " href="#"> <i class="far fa-sign-in-alt" ></i></a>
 {% endblock %}
 
 
@@ -16,63 +16,100 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-    body {
-        background-image: url("cover6.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: rgb(0,0,245,0.15);
-        background-blend-mode: overlay;
-        opacity: 0.9;
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    /*body {*/
+    /*    background-image: url("1.jpg");*/
+    /*    background-size: cover;*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-position: center;*/
+    /*    background-color: rgb(0,0,245,0.15);*/
+    /*    background-blend-mode: overlay;*/
 
-    }
-    .text:hover{
-       font-size:200%;
 
-    }
+    /*}*/
+
     .text{
         font-family: 'EB Garamond', serif;
         font-size: 160%;
         margin-top:60px
     }
     .box{
-    height: 180px;
-        background-color: white;
-        opacity: 0.5;
-        border-radius: 8px 8px;
-        box-shadow: 5px 5px 5px 5px black;
+
+        background-color: rgb(255,255,255,0.45);
+        background-blend-mode: overlay;
+        /*border-radius: 8px 8px;*/
+        box-shadow: 3px 3px 3px 3px rgb(255,255,255,0.45);
     }
     .box:hover{
-        height: 200px;
-        opacity:0.7;
+        height: 150px;
+        width :100px;
+        background-color: rgb(255,255,255,0.85);
+        background-blend-mode: overlay;
     }
+
+    .navbar{
+        opacity: 0.9;
+    }
+    #bv{
+        font-family: 'Playfair Display', serif;
+    }
+    .div{animation: bounce .3s ease infinite alternate;}
+    #pay{ -webkit-animation-delay: .2s; animation-delay: .2s; }
     </style>
 {% endblock %}
 {% block body %}
-    <div style="height: 200px"></div>
-    <div class="container-fluid" style="height: 400px">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-3  box" style="margin-right:10px;">
-<a href="#" class="text-primary nav-link text-center text" ><b>Paiement</b></a>
-    </div>
-            <div class="col-3 box" >
-                <a href="#" class="text-primary nav-link text-center text"><b>Caisse</b></a>
+
+    <hr  style="margin-top: 0;
+    margin-bottom: 1.8rem; ">
+
+    <div class="jumbotron jumbotron-fluid"  style="background-image : url('pp.jpg'); border: 2px black">
+        <div class="container w-75 shadow-sm  " style="background-color: rgb(0,0,0,0.05); background-blend-mode: overlay"">
+
+
+
+
+                        <h4 class="display-4  " id="bv"  >  <b>BIENVENUE</b> </h4>
+                    </div>
 
             </div>
-            <div class="col-3"></div>
-        </div></div>
-{#    <div class="jumbotron jumbotron-fluid" style="background-image: url('4.jpg'); background-size: 100%, 100%;#}
-{#opacity:0.5; height:500px">#}
-{#        <div class="container">#}
-{#            <h4 class="display-8 " style="color:WHITE"  >  Syndic</h4>#}
 
-{#            <div class="form-row cont container">#}
-{#                <input type="email" class="form-control input" id="email">#}
-{#                <a href="#" class="search"><i class="fas fa-search  search" style="color:WHITE" ></i></a>#}
-{#            </div>#}
+    <hr  style="margin-bottom: 0;">
 
-        </div>
-    </div>
+    <div class="container-fluid bg-dark" style="height: 200px">
+
+            <div class="row div">
+                <div class="col-4"></div>
+                <div class="col-3  "  >
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 box" style="border-radius: 10px 30px; box-shadow: 3px 3px 3px black;
+                            background-color: rgb(255,255,255,0.45); background-blend-mode: overlay;">
+                                <i class="fas fa-hand-holding-usd text-light  small"
+                                   style="font-size: 2.5rem;margin-left: 28px;margin-top: 6px" ></i> <br><br>
+                                <a href="#" class="btn-link  text-center text"  id="pay" style="color: white;margin-left: 5px">Paiement</a>
+                            </div>
+                        </div>
+
+                     </div>
+                </div>
+                <div class="col-3 " >
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 box" style="border-radius: 10px 30px; box-shadow: 3px 3px 3px black;
+                            background-color: rgb(255,255,255,0.45); background-blend-mode: overlay;  ">
+                                <i class="fas fa-cash-register text-light text-center rounded-circle "
+                                   style="font-size: 2.5rem; margin-left: 35px; margin-top: 6px"></i><br><br>
+                            <a href="#" class="btn-link  text-center text"  id="pay" style="color: white;margin-left: 20px">Caisse</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div><br></div>
+
+
 
 {% endblock %}

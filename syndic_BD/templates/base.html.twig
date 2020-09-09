@@ -16,8 +16,11 @@
 height:50px;
         }
         :root{
-            --navColor : #2968AD;
+            --navColor : black;
             --navLight: #9AC5E7 ;
+        }
+        .text-dark{
+            font-size: small;
         }
     </style>
     <body>
@@ -27,9 +30,10 @@ height:50px;
 
         <!--NAVBAR-->
         {% block nav  %}
-            <nav class="navbar navbar-expand  bg-white  navbar-dark ">
+{#            <div class="container-fluid" style="height: 40px"></div>#}
+            <nav class="navbar navbar-expand border-dark bg-white  navbar-dark ">
 
-                       <img src="syndic.png" class="img">
+                       <img src="syndic2.png" class="img">
 
                 <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
