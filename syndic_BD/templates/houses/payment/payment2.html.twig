@@ -1,0 +1,56 @@
+{% extends 'houses/payment/paymentBase.html.twig' %}
+{% block stylesheets %}
+    <style>
+        .navbar{
+            opacity:0.9;
+        }
+        body{
+            background-color: #343a40;
+        }
+
+        .active {
+            color:#1b03a3;
+        }
+    </style>
+{% endblock %}
+
+
+{% block body %}
+{{ parent() }}
+<div class="container">
+    <div class="row">
+        <div class="col flex-column" style="margin-left: 47%">
+            <i class="fas fa-circle   small " style="color:lightgrey"> </i>
+            <i class="fas fa-circle  small active " > </i>
+
+            <i class="fas fa-circle  small "style="color:lightgrey"></i>
+
+
+        </div>
+    </div>
+</div>
+<div class="container"style="height:100px"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-5">
+                <label class="text-white " > Choisir une date : <br>
+                <input type="text" class="form-check-input shadow w-100 " style="border-radius: 10px 10px; " name="datepicker" id="datepicker" />
+                </label>
+                <br> <br> <br>
+                <a href="" class="btn text-white shadow  float-right" style=" background-color: #1b03a3; margin-top: -1px"> confirmer </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    {% block javascripts %}
+        <script>
+            $("#datepicker").datepicker( {
+                format: "mm-yyyy",
+                startView: "months",
+                minViewMode: "months"
+            });
+        </script>
+    {% endblock %}

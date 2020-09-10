@@ -3,51 +3,80 @@
 {% block title %}Personnels{% endblock %}
 
   {% block liItem0 %}
-      <a class="nav-link text-primary  " href="/base"><i class="fad fa-home-alt"></i> </a>
+      <a class="nav-link text-dark  " href="/base"><i class="fad fa-home-alt"></i> </a>
   {% endblock %}
  {% block liItem1 %}
-     <a class="nav-link  text-primary" href="/houses">Maisons</a>
+     <a class="nav-link  text-dark" href="/houses">Maisons</a>
  {% endblock %}
 {% block liItem2 %}
-    <a class="nav-link text-primary  " href="#"> Caisse</a>
+    <a class="nav-link text-dark  " href="#"> Caisse</a>
 {% endblock %}
  {% block stylesheets %}
      <style>
          main {
 
          }
+         .cont {
+             display: flex;
+         }
+
+         .input {
+             flex: 1;
+
+         }
+         ::placeholder{
+             font-size: small;
+         }
+         .display-4{
+             font-family: 'EB Garamond', serif;
+         }
      </style>
  {% endblock %}
 
 {% block body %}
-    <div style="height:5px">
 
-    </div>
     <main >
+        <hr style="margin-top: 0">
 
-
-        <div class="jumbotron jumbotron-fluid" style="background-image: url('workers.jpg'); background-size: 100% 100%;
-background-color: rgb(0,0,255,0.25); background-blend-mode: overlay; height:300px">
+        <div class="jumbotron jumbotron-fluid" style="background-image: url('menage.jpg'); background-size: 100% ;
+background-color: rgb(0,0,0,.25); background-blend-mode: overlay; height:250px">
             <div class="container">
                 <h1 class="display-4 text-center "style="color:WHITE"  ><b>PERSONNELS</b></h1>
                 {#                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>#}
             </div>
         </div>
-
+        <hr style="margin-bottom: 1.8rem; ">
         <div class="row">
             <div class="col-2 " >
 
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 bg-white shadow" style=" margin-left: 15px; border-radius: 20px 20px">
-                            <p class=" text-center btn-link" style="margin-top:10px"><i class="fas fa-plus"></i> Ajout </p>
+                            <p class=" text-center btn-link text-dark" style="margin-top:10px"><i class="fas fa-plus"></i> Ajout </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 bg-white shadow" style="margin-left: 15px; margin-top:10px; border-radius: 20px 20px">
                             <p ><i class="fas fa-search"></i> Chercher </p>
+                               <label class="small">Nom ou Prenom :
+                                <input type="email" class="form-control input" id="email">
+                                </label>
+                            <label class="small">Travail :
+
+                                <input type="email" class="form-control input"  id="email" ></label>
+
+                            <label class="small">CIN :
+                                <input type="email" class="form-control input " id="email" >
+                            </label>
+                            <br>
+                            <a href="#" class="btn-warning float-right btn btn-sm" style=" margin-bottom: 15px;margin-top: 15px">
+                                <i class="fas fa-search  search"  ></i>
+                                chercher</a>
 
                         </div>
+
+
+                        <br>
                     </div>
 
 
@@ -64,12 +93,19 @@ background-color: rgb(0,0,255,0.25); background-blend-mode: overlay; height:300p
                             <div class="card " style="width: 15rem; margin-left: 10px; ">
                                 <div class="card-body">
                                     <h5 class="card-title">nom et prenom</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted"> khedmtou</h6>
-                                    <p class="card-text">Some quick example text </p>
-                                    <a href="#" class="btn btn-sm btn-info small"
-                                       style="width:5.5rem; border-radius: 20px 20px">Détailles</a>
-                                    <a href="#" class="btn btn-sm btn-danger smaller"
-                                       style="width:5.5rem;margin-top:4px; border-radius: 20px 20px">Supprimer</a>
+                                    <p class="small" style="color:grey">50ans</p>
+                                    <hr>
+                                    <h6 class="card-text"> travail</h6>
+                                    <p class="card-text"><i class="fas fa-file-signature"></i> contrat </p>
+                                    <hr>
+                                    <p class="card-text"><i class="far fa-id-card"></i> num cin</p>
+                                    <p class="card-text"><i class="fas fa-phone-square-alt"></i> num tel </p>
+                                    <p class="card-text"><i class="fas fa-map-marker-alt"></i> adresse</p>
+                                    <p class="card-text"><i class="far fa-calendar-alt"></i> date naissance </p>
+
+                                    <a href="#" class="btn btn-sm btn-light smaller"
+                                       style="width:10rem; margin-top:4px; border-radius: 20px 20px">
+                                        <i class="fas fa-download small"></i> Bultain de paie</a>
                                 </div>
                             </div>
 

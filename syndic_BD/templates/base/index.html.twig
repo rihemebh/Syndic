@@ -62,8 +62,9 @@
     <hr  style="margin-top: 0;
     margin-bottom: 1.8rem; ">
 
-    <div class="jumbotron jumbotron-fluid"  style="background-image : url('pp.jpg'); border: 2px black">
-        <div class="container w-75 shadow-sm  " style="background-color: rgb(0,0,0,0.05); background-blend-mode: overlay"">
+    <div class="jumbotron jumbotron-fluid"  style="background-image : url('pp.jpg'); border: 2px black; height:280px ">
+        <div class="container w-75 shadow-sm  "
+             style="background-color: rgb(0,0,0,0.05); background-blend-mode: overlay">
 
 
 
@@ -74,34 +75,46 @@
             </div>
 
     <hr  style="margin-bottom: 0;">
+{#    <div class="container-fluid">#}
+{#        <div class="row">#}
+{#            <div class="col-1"></div>#}
+{#            <div class="col-7">#}
 
+{#                <img src="{{ asset('frame1.png') }}" style="width:340px; height: 40px; opacity:0.8" class="float-right">#}
+{#            </div>#}
+{#        </div>#}
+
+{#    </div>#}
+{#<br>#}
     <div class="container-fluid bg-dark" style="height: 200px">
 
             <div class="row div">
-                <div class="col-4"></div>
-                <div class="col-3  "  >
+                <div class="col-3"></div>
+                <div class="col-4  " style="margin-right: 50px" >
                     <br>
                     <div class="container">
                         <div class="row">
-                            <div class="col-6 box" style="border-radius: 10px 30px; box-shadow: 3px 3px 3px black;
+                            <div class="col-5 box" style="border-radius: 10px 30px; box-shadow: 3px 3px 3px black;
                             background-color: rgb(255,255,255,0.45); background-blend-mode: overlay;">
                                 <i class="fas fa-hand-holding-usd text-light  small"
-                                   style="font-size: 2.5rem;margin-left: 28px;margin-top: 6px" ></i> <br><br>
-                                <a href="#" class="btn-link  text-center text"  id="pay" style="color: white;margin-left: 5px">Paiement</a>
+                                   style="font-size: 2.5rem;margin-left: 40px;margin-top: 6px" ></i> <br><br>
+                                <a href="/payment" class="btn-link  text-center text"  id="pay"
+                                   style="color: white;margin-left: 12px">Paiement</a>
                             </div>
                         </div>
 
                      </div>
                 </div>
-                <div class="col-3 " >
+                <div class="col-4 " style="margin-right: 20px" >
                     <br>
                     <div class="container">
                         <div class="row">
-                            <div class="col-6 box" style="border-radius: 10px 30px; box-shadow: 3px 3px 3px black;
+                            <div class="col-5 box" style="border-radius: 10px 30px; box-shadow: 3px 3px 3px black;
                             background-color: rgb(255,255,255,0.45); background-blend-mode: overlay;  ">
                                 <i class="fas fa-cash-register text-light text-center rounded-circle "
-                                   style="font-size: 2.5rem; margin-left: 35px; margin-top: 6px"></i><br><br>
-                            <a href="#" class="btn-link  text-center text"  id="pay" style="color: white;margin-left: 20px">Caisse</a>
+                                   style="font-size: 2.5rem; margin-left: 45px; margin-top: 6px"></i><br><br>
+                            <a href="#" class="btn-link  text-center text"  id="pay"
+                               style="color: white;margin-left: 30px">Caisse</a>
                         </div>
                     </div>
 

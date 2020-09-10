@@ -1,0 +1,253 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Historique paiement{% endblock %}
+
+  {% block liItem0 %}
+      <a class="nav-link text-dark  " href="/base"><i class="fad fa-home-alt"></i> </a>
+  {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-dark" href="/workers">Personnels</a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link text-dark  " href="/houses#"> Maisons</a>
+{% endblock %}
+
+ {% block stylesheets %}
+<style>
+    .card{
+        margin-top: 21px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 13px;
+        width: 13px;
+        left: 3px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: white;
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px white;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(12px);
+        -ms-transform: translateX(12px);
+        transform: translateX(12px);
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 17px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider.round {
+        border-radius: 37px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    #retour{
+        margin-top : -20px ;
+        margin-left:30px;
+        margin-bottom: -5px;
+    }
+    .text-dark{
+        font-size: small;
+    }
+    .btn-outline-danger{
+        width:120px;
+        margin-top:20px;
+        margin-bottom:0px;
+
+    }
+    #bv{
+
+        font-family: 'EB Garamond', serif;
+
+    }
+    </style>
+{% endblock %}
+{% block body %}
+
+<div class="container-fluid " >
+    <hr style="margin-top: 0">
+    <a href="/houses" class="text-dark" id="retour">Maisons</a>
+    <i class="fas fa-angle-right smaller" ></i>
+    <a href="/histPay" class="text-dark">  Historique de paiement</a>
+    <i class="fas fa-angle-right smaller " ></i>
+    <a href="/month" class="disabled text-dark">  Paiement par mois</a>
+    <hr style="margin-bottom: 1.8rem; ">
+</div>
+    <div class="jumbotron shadow-sm jumbotron-fluid"  style="background-image: url('money3.jpg'); background-size: 100%;
+background-color: rgb(0,0,0,0.3); background-blend-mode: overlay; height:250px" >
+        <div class="container ">
+            <h6 class="display-4 text-white" id="bv" style="margin-top: 0" >  <b>Année 2001</b> </h6>
+            <a href="" class="lead btn btn-sm btn-group-toggle btn-warning shadow-sm">Payer tout</a>
+            <a href="" class="lead btn btn-sm btn-group-toggle btn-warning shadow-sm">Payer semestre</a>
+            <a href="" class="lead btn btn-sm btn-group-toggle btn-warning shadow-sm">Payer trimestre</a>
+        </div>
+    </div>
+
+    <hr style="margin-top: 0">
+    <div class="container">
+
+    <div class="container shadow bg-light" style=" border-radius: 20px 20px;">
+        <div class="row">
+            <div class="col">
+                <div class="card shadow-sm border-light" style="width:9rem;   background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">Janvier</h6>
+
+                          <p class="card-text text-center text-success small">payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100 disabled"> Payer</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm border-light" style="width:9rem; background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">Fevrier</h6>
+                        <p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  shadow-sm border-light" style="width:9rem; background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center  card-title">Mars</h6>
+                        <p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm border-light" style="width:9rem; background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">Avril</h6>
+                       <p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  shadow-sm border-light" style="width:9rem; background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">Mai</h6>
+                        <p class="card-text"><p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  shadow-sm border-light" style="width:9rem; background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">juin</h6>
+                        <p class="card-text"><p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  border-light shadow-sm" style="background-color: rgb(0,0,0,0.15);
+                 background-blend-mode: overlay; width:9rem;">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">juillet</h6>
+                        <p class="card-text"><p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  border-light shadow-sm" style="width:9rem; background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">Aout</h6>
+                        <p class="card-text"><p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  border-light shadow-sm" style="width:9rem; background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">Septembre</h6>
+                        <p class="card-text"><p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  border-light shadow-sm" style="width:9rem; background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">October</h6>
+                        <p class="card-text"><p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  shadow-sm border-light" style="background-color: rgb(0,0,0,0.15); background-blend-mode: overlay; width:9rem;">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">Novembre</h6>
+                        <p class="card-text"><p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card  border-light  shadow-sm" style="width:9rem;
+               background-color: rgb(0,0,0,0.15); background-blend-mode: overlay">
+                    <div class="card-body">
+                        <h6 class="text-center card-title">Decembre</h6>
+                        <p class="card-text"><p class="card-text text-center text-danger small">Non payé</p>
+                       <a href="#" class="btn btn-outline-dark btn-sm w-100"> Payer</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}

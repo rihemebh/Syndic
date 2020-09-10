@@ -10,10 +10,15 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" class="rounded-circle" href="{{ asset('SyndicIco.png') }}"
               style="height: 70px; width:70px" type="image/x-icon">
+{#        <link href="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">#}
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet">
+
+
     </head>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
         .img{
-height:50px;
+        height:50px;
         }
         :root{
             --navColor : black;
@@ -22,6 +27,7 @@ height:50px;
         .text-dark{
             font-size: small;
         }
+
     </style>
     <body>
 
@@ -94,6 +100,10 @@ height:50px;
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
 
     {% block javascripts %}{% endblock %}
     </body>
