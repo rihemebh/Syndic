@@ -1,0 +1,45 @@
+{% extends 'houses/payment/paymentBase.html.twig' %}
+{% block stylesheets %}
+    <style>
+        .navbar{
+            opacity:0.9;
+        }
+        body{
+            background-color: #343a40;
+        }
+
+        .active {
+            color:#1b03a3;
+        }
+    </style>
+{% endblock %}
+
+
+{% block body %}
+{{ parent() }}
+<div class="container">
+    <div class="row">
+        <div class="col flex-column" style="margin-left: 47%">
+            <a href="/payment">   <i class="fas fa-circle   small " style="color:lightgrey"> </i></a>
+            <a href="/payment2"><i class="fas fa-circle  small  " style="color:lightgrey"> </i></a>
+
+            <i class="fas fa-circle  active small "></i>
+
+        </div>
+    </div>
+</div>
+    <div class="container" style="height:80px"></div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col text-center text-white" style="font-family: 'EB Garamond', serif; font-size: larger">
+                <i class="fas fa-hand-holding-usd text-light"
+                   style="font-size: 3rem;margin-left: 40px;margin-top: 6px" ></i> <br> <br>
+                Votre paiement a été effectué avec succés
+            </div>
+        </div>
+    </div>
+<br>
+    <p class="text-light small text-center" >Payer un aute mois ? <a href="/payment">cliquer ici</a></p>
+{% endblock %}

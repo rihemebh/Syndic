@@ -16,28 +16,28 @@
 
 
 {% block body %}
-{{ parent() }}
-<div class="container">
-    <div class="row">
-        <div class="col flex-column" style="margin-left: 47%">
-            <a href="/payment">   <i class="fas fa-circle   small " style="color:lightgrey"> </i></a>
-            <i class="fas fa-circle  small active " > </i>
+    {{ parent() }}
+    <div class="container">
+        <div class="row">
+            <div class="col flex-column" style="margin-left: 47%">
+                <a href="/payment">   <i class="fas fa-circle   small " style="color:lightgrey"> </i></a>
+                <a href=""><i class="fas fa-circle active small  " > </i></a>
 
-            <i class="fas fa-circle  small "style="color:lightgrey"></i>
+                <i class="fas fa-circle   small "style="color:lightgrey"></i>
 
-
+            </div>
         </div>
     </div>
-</div>
-<div class="container" style="height:100px"></div>
+
+    <div class="container" style="height:100px"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-3">
 
             </div>
             <div class="col-6">
-                <label class="text-white " style="font-family: 'EB Garamond', serif"> Choisir un mois : <br>
-                <input type="text" class="form-check-input shadow w-100 " style="border-radius: 10px 10px; " name="datepicker" id="datepicker" />
+                <label class="text-white " style="font-family: 'EB Garamond', serif"> Choisir une année : <br>
+                    <input type="text" class="form-check-input shadow w-100 " style="border-radius: 10px 10px; " name="datepicker" id="datepicker" />
                 </label>
                 <br> <br> <br>
                 <a href="/confirm" class="btn text-white shadow  float-right" style=" background-color: #1b03a3; margin-top: -1px"> confirmer </a>
@@ -49,9 +49,9 @@
         <script>
             $("#datepicker").datepicker( {
                 multidate: true,
-                format: "mm-yyyy",
-                startView: "months",
-                minViewMode: "months"
+                format: "yyyy",
+                startView: "years",
+                minViewMode: "years"
             });
         </script>
     {% endblock %}
