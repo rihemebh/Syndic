@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+ {% block liItem0 %}
+     <a class="nav-link text-dark  " href="/base"><i class="fad fa-home-alt"></i> </a>
+ {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-dark" href="/workers">Personnels</a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link text-dark  " href="/houses"> Maisons</a>
+{% endblock %}
+{% block title %}Caisse{% endblock %}
+{% block stylesheets %}
+    <style>
+        .navbar{
+            opacity:0.9;
+        }
+        body{
+            background-color: #343a40;
+        }
+
+        .totale{
+            text-shadow: 1px 1px 3px;
+        }
+        .cont {
+            display: flex;
+        }
+
+        input {
+            flex: 1;
+            opacity:0.7;
+
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    <div class="container"> <br>
+        <a href="/treasury" class="text-light">
+            {#            <i class="fas fa-chevron-left"></i> #}
+            <i class="far fa-hand-point-left"></i>
+            Retour </a></div>
+    <div class="container text-center" style="height: 100px">
+        <img src="caisse.jpg" class="rounded-circle" style="height: 80px; width:83px; margin-top: 20px">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col  text-center" style="font-family: 'EB Garamond', serif">
+                <p class="text-primary">Votre montant du caisse est maintenant:</p>
+                <p class="text-white totale" style="font-size: 3rem;"> 580,450 Dt</p>
+            </div>
+        </div>
+<br>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <table class="table table-dark shadow table-responsive-sm  table-bordered" >
+                    <thead>
+                    <tr>
+                        <label class="cont">
+                            <input type="text" class="input-group-text sm" PLACEHOLDER="Ajouter un montant">
+                            <a href="" class=" text-primary" style="font-size: 1.5rem; margin-left: 10px">
+                                <i class="fas fa-plus-square"></i></a>
+
+                        </label>
+
+                    </tr>
+                    </thead>
+                </table>
+
+            </div></div>
+    </div>
+{% endblock %}

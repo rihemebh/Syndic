@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+ {% block liItem0 %}
+     <a class="nav-link text-dark  " href="/base"><i class="fad fa-home-alt"></i> </a>
+ {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-dark" href="/workers">Personnels</a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link text-dark  " href="/houses"> Maisons</a>
+{% endblock %}
+{% block title %}Caisse{% endblock %}
+{% block stylesheets %}
+    <style>
+        .navbar{
+            opacity:0.9;
+        }
+        body{
+            background-color: #343a40;
+        }
+        .active {
+            color:#1b03a3;
+        }
+        .totale{
+            text-shadow: 1px 1px 3px;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+<div class="container" style="height: 100px"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col  text-center" style="font-family: 'EB Garamond', serif">
+                <p class="text-primary">Votre montant totale est maintenant:</p> <br>
+                <p class="text-white totale" style="font-size: 3rem;">1 580,450 Dt</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-2">
+                <a href="/caisse" class="float-right btn btn-outline-primary" >Consulter caisse</a>
+            </div>
+            <div class="col-2">
+                <a href="/bank" class="float-right  btn btn-outline-primary">Consulter banque</a>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

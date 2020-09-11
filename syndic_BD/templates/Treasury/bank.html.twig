@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+ {% block liItem0 %}
+     <a class="nav-link text-dark  " href="/base"><i class="fad fa-home-alt"></i> </a>
+ {% endblock %}
+ {% block liItem1 %}
+     <a class="nav-link  text-dark" href="/workers">Personnels</a>
+ {% endblock %}
+{% block liItem2 %}
+    <a class="nav-link text-dark  " href="/houses"> Maisons</a>
+{% endblock %}
+{% block title %}Caisse{% endblock %}
+{% block stylesheets %}
+    <style>
+        .navbar{
+            opacity:0.9;
+        }
+        body{
+            background-color: #343a40;
+        }
+
+        .totale{
+            text-shadow: 1px 1px 3px;
+        }
+        .cont {
+            display: flex;
+        }
+
+        input {
+            flex: 1;
+            opacity:0.7;
+
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    <div class="container"> <br>
+        <a href="/treasury" class="text-light">
+{#            <i class="fas fa-chevron-left"></i> #}
+            <i class="far fa-hand-point-left"></i>
+            Retour </a></div>
+    <div class="container text-center" style="height: 100px">
+        <img src="atb.png" class="rounded-circle" style="height: 50px; width:50px; margin-top: 50px">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col  text-center" style="font-family: 'EB Garamond', serif">
+                <p class="text-danger">Votre montant du banque est maintenant:</p>
+                <p class="text-white totale" style="font-size: 3rem;"> 580,450 Dt</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-5">
+            <table class="table table-dark shadow table-responsive-sm  table-bordered" style="margin-left: 38px">
+                <thead>
+                <tr>
+
+                    <th scope="col">Réserve (en Dt)</th>
+                    <th scope="col">chéques (en Dt)</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="text-center">
+
+                    <td>180,450</td>
+                    <td>400,000</td>
+
+                </tr>
+                <tr>
+
+                    <td>
+                        <label class="cont">
+                            <input type="text" class="input-group-text sm" PLACEHOLDER="Ajout réserve">
+                            <a href="" class=" text-danger" style="font-size: 1.5rem; margin-left: 10px">
+                                <i class="fas fa-plus-square"></i></a>
+
+                        </label>
+                    </td>
+                    <td>
+                        <label class="cont">
+                            <input type="text" class="input-group-text sm" placeholder="Ajout chéque">
+                            <a href="" class=" text-danger" style="font-size: 1.5rem; margin-left: 10px">
+                                <i class="fas fa-plus-square"></i></a>
+                        </label>
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+
+        </div></div>
+    </div>
+{% endblock %}
