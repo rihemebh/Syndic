@@ -1,5 +1,15 @@
 {% extends 'base.html.twig' %}
+ {% block head %}
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap.css') }}">
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+{#     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">#}
+
+ {% endblock %}
 {% block title %}Syndic {% endblock %}
   {% block liItem0 %}
       <a class="nav-link text-dark  " href="/workers"> Personnels </a>
@@ -8,124 +18,291 @@
      <a class="nav-link text-dark " href="/houses"> Maisons </a>
  {% endblock %}
 {% block liItem2 %}
-    <a class="nav-link  text-dark " href="#"> <i class="far fa-sign-in-alt" ></i></a>
+<div class="navbar-nav ml-auto">
+			<div class="nav-item dropdown login-dropdown">
+				<a href="#" data-toggle="dropdown" class="nav-item nav-link text-info dropdown-toggle"><i class="far fa-sign-in-alt"></i> <b>Login</b></a>
+				<div class="dropdown-menu">
+                    <form class="form-inline login-form"  method="post">
+                        <div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<span class="fa fa-user"></span>
+								</span>
+							</div>
+                            <input type="text" class="form-control" placeholder="email" required>
+                        </div>
+                        <div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">
+									<i class="fa fa-lock"></i>
+								</span>
+							</div>
+                            <input type="text" class="form-control" placeholder="Mot de passe" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+	</div>
+
+
 {% endblock %}
 
 
  {% block stylesheets %}
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-    /*body {*/
-    /*    background-image: url("1.jpg");*/
-    /*    background-size: cover;*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-position: center;*/
-    /*    background-color: rgb(0,0,245,0.15);*/
-    /*    background-blend-mode: overlay;*/
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.form-control {
+	box-shadow: none;
+	border-radius: 4px;
+	border-color: #dfe3e8;
+}
+/*.navbar {*/
+/*	background: #fff;*/
+/*	padding-left: 16px;*/
+/*	padding-right: 16px;*/
+/*	border-bottom: 1px solid #dfe3e8;*/
+/*	border-radius: 0;*/
+/*}*/
+.navbar .navbar-brand {
+	font-size: 20px;
+	padding-left: 0;
+	padding-right: 50px;
+}
+.navbar .navbar-brand b {
+	color: #1b03a3;
+}
+.navbar a, .navbar a:active {
+	color: #999;
+	background: transparent;
+}
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+	color: #1b03a3 !important;
+}
+.navbar .navbar-nav > a.active, .navbar .navbar-nav.show > a {
+	color: #1b03a3 !important;
+	background: transparent !important;
+}
+.navbar .form-inline .input-group-text {
+	box-shadow: none;
+	border-radius: 2px 0 0 2px;
+	background: #f5f5f5;
+	border-color: #dfe3e8;
+	font-size: 16px;
+}
+.navbar .form-inline i {
+	font-size: 16px;
+}
+.navbar .form-inline .btn {
+	border-radius: 2px;
+	color: #fff;
+	border-color: #1b03a3;
+	background: #1b03a3;
+	outline: none;
+}
+.navbar .form-inline .btn:hover, .navbar .form-inline .btn:focus {
+	border-color: #1b03a3;
+	background:#1b03a3;
+}
+.navbar .search-form {
+	display: inline-block;
+}
+.navbar .search-form .btn {
+	margin-left: 4px;
+}
+.navbar .search-form .form-control {
+	border-radius: 2px;
+}
+.navbar .login-form .input-group {
+	margin-right: 4px;
+	float: left;
+}
+.navbar .login-form .form-control {
+	max-width: 158px;
+	border-radius: 0 2px 2px 0;
+}
+.navbar .navbar-right .dropdown-toggle::after {
+	display: none;
+}
+.navbar .dropdown-menu {
+	font-size: 14px;
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+	padding: 6px 20px;
+}
+.navbar .login-dropdown .dropdown-menu {
+	width: 505px;
+	padding: 20px;
+	left: auto;
+	right: 0;
+}
+.navbar .login-dropdown .dropdown-toggle::after {
+	display: none;
+}
+@media (min-width: 1200px){
+	.search-form .input-group {
+		width: 300px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 768px){
+	.navbar .dropdown-menu {
+		width: 100%;
+		background: transparent;
+		padding: 10px 20px;
+	}
+	.navbar .input-group {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.navbar .input-group .form-control {
+		max-width: none;			
+	}
+	.navbar .login-form .btn {
+		width: 100%;
+	}
+}
+         .text {
+             font-family: 'EB Garamond', serif;
+             font-size: 150%;
+             margin-top: 10px;
+             color: black;
+             /*margin-left: 15px*/
+         }
+@media screen and (min-width: 200px) {
+  div.box {
+    height:80px;
+  }
+}
+@media screen and (min-width: 480px) {
+  div.box {
+    height:100px;
+  }
+}
+@media screen and (min-width: 600px) {
+  div.box {
+    height:130px;
+  }
+}
+         .box {
+
+             height: 130px;
+
+         }
 
 
-    /*}*/
+         .box:hover {
+             height: 150px;
+             width: 120px;
+             /*background-color: rgba(255,255,255,0.85);*/
+             /*background-blend-mode: overlay;*/
+         }
 
-    .text{
-        font-family: 'EB Garamond', serif;
-        font-size: 160%;
-        margin-top:60px
-    }
-    .box{
+         .navbar {
+             opacity: 0.9;
+         }
 
-        background-color: rgb(255,255,255,0.45);
-        background-blend-mode: overlay;
-        /*border-radius: 8px 8px;*/
-        box-shadow: 3px 3px 3px 3px rgb(255,255,255,0.45);
-    }
-    .box:hover{
-        height: 150px;
-        width :100px;
-        background-color: rgb(255,255,255,0.85);
-        background-blend-mode: overlay;
-    }
+         #bv {
+             font-family: 'Playfair Display', serif;
+         }
 
-    .navbar{
-        opacity: 0.9;
-    }
-    #bv{
-        font-family: 'Playfair Display', serif;
-    }
-    .div{animation: bounce .3s ease infinite alternate;}
-    #pay{ -webkit-animation-delay: .2s; animation-delay: .2s; }
-    </style>
-{% endblock %}
+         .div {
+             animation: bounce 4s ease infinite alternate;
+         }
+
+         #pay {
+             -webkit-animation-delay: 10s;
+             animation-delay: 10s;
+         }
+
+         .main-box {
+             background-color: rgba(52, 58, 64, 0.09);
+             background-blend-mode: overlay;
+
+         }
+     </style>
+ {% endblock %}
 {% block body %}
 
-    <hr  style="margin-top: 0;
+    <hr style="margin-top: 0;
     margin-bottom: 1.8rem; ">
 
-    <div class="jumbotron jumbotron-fluid"  style="background-image : url('pp.jpg'); border: 2px black; height:280px ">
+    <div class="jumbotron jumbotron-fluid"
+         style="background-image : url('pp.jpg'); background-size: 95%;
+          border: 2px black; height:240px ">
         <div class="container w-75 shadow-sm  "
-             style="background-color: rgb(0,0,0,0.05); background-blend-mode: overlay">
+             style="background-color: rgba(0,0,0,0.05); background-blend-mode: overlay">
 
 
+            <h1 class=" display-4 " id="bv"> BIENVENUE </h1>
+        </div>
 
+    </div>
 
-                        <h4 class="display-4  " id="bv"  >  <b>BIENVENUE</b> </h4>
+    <hr style="margin-bottom: 0;" >
+
+    <div class="container-fluid main-box" style="height: 250px">
+<div class="row"> <br></div>
+        <div class="row div">
+            <div class="col-3"></div>
+            <div class="col-4  " style="margin-right: 0">
+ <br>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-7 col-sm-12 btn btn-light shadow box " style="">
+                            <a href="/payment" class="btn">
+                                <i class="fas fa-hand-holding-usd"
+                                   style="font-size: 4vw; color: black"></i><br>
+                                <p class=" text-center text" id="pay"
+                                   style="font-size: 2vw">Paiement</p></a>
+
+                        </div>
                     </div>
+
+                </div>
+            </div>
+            <div class="col-4 " style="margin-right: 5px">
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12 btn btn-light shadow box" style="font-size:5vw;" >
+                            <a href="/treasury" class="btn ">
+                                <i class="fas fa-sack-dollar text-center"
+                                   style="font-size:4vw;  margin-top: 5px;color:black"></i>
+
+                                <p class=" text" id="pay"
+                                   style="font-size:2vw;">Trésorerie </p>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
-
-    <hr  style="margin-bottom: 0;">
-{#    <div class="container-fluid">#}
-{#        <div class="row">#}
-{#            <div class="col-1"></div>#}
-{#            <div class="col-7">#}
-
-{#                <img src="{{ asset('frame1.png') }}" style="width:340px; height: 40px; opacity:0.8" class="float-right">#}
-{#            </div>#}
-{#        </div>#}
-
-{#    </div>#}
-{#<br>#}
-    <div class="container-fluid bg-dark" style="height: 200px">
-
-            <div class="row div">
-                <div class="col-3"></div>
-                <div class="col-4  " style="margin-right: 50px" >
-                    <br>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-5 box" style="border-radius: 10px 30px; box-shadow: 3px 3px 3px black;
-                            background-color: rgb(255,255,255,0.45); background-blend-mode: overlay;">
-                                <i class="fas fa-hand-holding-usd text-light  small"
-                                   style="font-size: 2.5rem;margin-left: 40px;margin-top: 6px" ></i> <br><br>
-                                <a href="/payment" class="btn-link  text-center text"  id="pay"
-                                   style="color: white;margin-left: 12px">Paiement</a>
-                            </div>
-                        </div>
-
-                     </div>
-                </div>
-                <div class="col-4 " style="margin-right: 20px" >
-                    <br>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-5 box" style="border-radius: 10px 30px; box-shadow: 3px 3px 3px black;
-                            background-color: rgb(255,255,255,0.45); background-blend-mode: overlay;  ">
-{#                                <i class="fas fa-cash-register text-light text-center rounded-circle "#}
-{#                                   style="font-size: 2.5rem; margin-left: 45px; margin-top: 6px"></i>#}
-                                <i class="fas fa-sack-dollar text-center text-light"
-                                   style="font-size: 2.5rem; margin-left: 45px; margin-top: 10px"></i>
-                                <br><br>
-                            <a href="/treasury" class="btn-link  text-center text"  id="pay"
-                               style="color: white;margin-left: 18px">Trésorerie</a>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div><br></div>
+            <br></div>
 
 
 
+{% endblock %}
+{% block cdnscripts %}
+<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+</script>
+{#  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>#}
+{#     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>#}
 {% endblock %}

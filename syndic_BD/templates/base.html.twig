@@ -2,19 +2,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        {% block head %}
         <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap.css') }}">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
               integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <title>{% block title %}Syndic{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
         <link rel="icon" class="rounded-circle" href="{{ asset('SyndicIco.png') }}"
               style="height: 70px; width:70px" type="image/x-icon">
-{#        <link href="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">#}
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css" rel="stylesheet">
 
 
+        {% endblock %}
+        <title>{% block title %}Syndic{% endblock %}</title>
     </head>
+    {% block stylesheets %}{% endblock %}
     <style>
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
         .img{
@@ -25,7 +25,7 @@
             --navLight: #9AC5E7 ;
         }
         .text-dark{
-            font-size: small;
+
         }
 
     </style>
@@ -49,7 +49,7 @@
 
                 <div class="collapse navbar-collapse justify-content-between" style="float: right" id="navbarNav">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item  ">
+                        <li class="nav-item  w-50 ">
                             {% block navitem1 %}
                             {% endblock %}
 
@@ -67,7 +67,7 @@
                     </ul>
 
                     <form class="form-inline my-2 my-lg-0">
-                        <ul  class="navbar-nav">
+                        <ul  class="navbar-nav w-100">
                             {% block liItem0 %}
 
                             {% endblock %}
@@ -78,18 +78,21 @@
 
 
 
-                                    {% block liItem2 %}
 
-                            {% endblock %}
 
-                        </ul>
-                    </form></div>
+                        </ul></form>
+                        {% block liItem2 %}
+
+                        {% endblock %} </div>
+
 
             </nav>
+
         {% endblock %}
     </header>
 
     {% block body %}{% endblock %}
+    {% block cdnscripts %}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
@@ -100,11 +103,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
             crossorigin="anonymous"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js"></script>
-
+{% endblock %}
     {% block javascripts %}{% endblock %}
     </body>
 
