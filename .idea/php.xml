@@ -104,6 +104,11 @@
       <path value="$PROJECT_DIR$/syndic_BD/vendor/psr/link" />
       <path value="$PROJECT_DIR$/syndic_BD/vendor/psr/container" />
       <path value="$PROJECT_DIR$/syndic_BD/vendor/composer" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/syndic_BD/vendor/knplabs/knp-paginator-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

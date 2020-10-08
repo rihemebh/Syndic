@@ -36,10 +36,10 @@
 {% block body %}
 
     <main >
-        <hr style="margin-top: 0">
+        <hr style="margin-top: 0;   margin-bottom: 1.8rem;">
 
         <div class="jumbotron jumbotron-fluid" style="background-image: url('menage.jpg'); background-size: 100% ;
-background-color: rgb(0,0,0,.25); background-blend-mode: overlay; height:250px">
+background-color: rgba(0,0,0,.25); background-blend-mode: overlay; height:250px">
             <div class="container">
                 <h1 class="display-4 text-center "style="color:WHITE"  ><b>PERSONNELS</b></h1>
                 {#                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>#}
@@ -58,20 +58,24 @@ background-color: rgb(0,0,0,.25); background-blend-mode: overlay; height:250px">
                     <div class="row">
                         <div class="col-12 bg-white shadow" style="margin-left: 15px; margin-top:10px; border-radius: 20px 20px">
                             <p ><i class="fas fa-search"></i> Chercher </p>
-                               <label class="small">Nom ou Prenom :
-                                <input type="email" class="form-control input" id="email">
-                                </label>
-                            <label class="small">Travail :
 
-                                <input type="email" class="form-control input"  id="email" ></label>
+                            {{ form_start(form) }}
+                            {{ form_end(form) }}
 
-                            <label class="small">CIN :
-                                <input type="email" class="form-control input " id="email" >
-                            </label>
-                            <br>
-                            <a href="#" class="btn-warning float-right btn btn-sm" style=" margin-bottom: 15px;margin-top: 15px">
-                                <i class="fas fa-search  search"  ></i>
-                                chercher</a>
+{#                               <label class="small">Nom ou Prenom :#}
+{#                                <input type="email" class="form-control input" id="email">#}
+{#                                </label>#}
+{#                            <label class="small">Travail :#}
+
+{#                                <input type="email" class="form-control input"  id="email" ></label>#}
+
+{#                            <label class="small">CIN :#}
+{#                                <input type="email" class="form-control input " id="email" >#}
+{#                            </label>#}
+{#                            <br>#}
+{#                            <a href="#" class="btn-warning float-right btn btn-sm" style=" margin-bottom: 15px;margin-top: 15px">#}
+{#                                <i class="fas fa-search  search"  ></i>#}
+{#                                chercher</a>#}
 
                         </div>
 
@@ -85,23 +89,23 @@ background-color: rgb(0,0,0,.25); background-blend-mode: overlay; height:250px">
             </div>
             <div class="col-9">
                 <div class="container-fluid">
+
                     <div class="row">
 
+                        {% for worker in workers %}
                         <div class="col">
-
-
-                            <div class="card " style="width: 15rem; margin-left: 10px; ">
+                            <div class="card " style="width: 15rem;  margin-bottom: 20px">
                                 <div class="card-body">
-                                    <h5 class="card-title">nom et prenom</h5>
-                                    <p class="small" style="color:grey">50ans</p>
+                                    <h5 class="card-title">{{ worker.name}}</h5>
+                                    <p class="small" style="color:grey">{{ worker.age }}ans</p>
                                     <hr>
-                                    <h6 class="card-text"> travail</h6>
-                                    <p class="card-text"><i class="fas fa-file-signature"></i> contrat </p>
-                                    <hr>
-                                    <p class="card-text"><i class="far fa-id-card"></i> num cin</p>
-                                    <p class="card-text"><i class="fas fa-phone-square-alt"></i> num tel </p>
-                                    <p class="card-text"><i class="fas fa-map-marker-alt"></i> adresse</p>
-                                    <p class="card-text"><i class="far fa-calendar-alt"></i> date naissance </p>
+                                    <h6 class="card-text" style="height: 50px">{{ worker.job }}</h6>
+                                    <p class="card-text"><i class="fas fa-file-signature"></i> {{worker.contractType}}</p>
+                                    <hr >
+                                    <p class="card-text"><i class="far fa-id-card bg-light"></i> {{ worker.cin }}</p>
+                                    <p class="card-text"><i class="fas fa-phone-square-alt"></i> {{ worker.NumTel}} </p>
+                                    <p class="card-text" style="height: 50px"><i class="fas fa-map-marker-alt"></i> {{ worker.adr }}</p>
+                                    <p class="card-text"><i class="far fa-calendar-alt"></i> {{ worker.birthday | date}}</p>
 
                                     <a href="#" class="btn btn-sm btn-light smaller"
                                        style="width:10rem; margin-top:4px; border-radius: 20px 20px">
@@ -110,11 +114,20 @@ background-color: rgb(0,0,0,.25); background-blend-mode: overlay; height:250px">
                             </div>
 
                         </div>
-
+                        {% endfor %}
                     </div>
+
                 </div>
             </div>
         </div>
         </div>
+<div class="container">
+    <div class="row">
+        <div class="col float-right">
+            {{ knp_pagination_render(workers) }}
+        </div>
+    </div>
+</div>
+
     </main>
 {% endblock %}

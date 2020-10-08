@@ -88,6 +88,9 @@
             margin-left:30px;
             margin-bottom: -5px;
         }
+        .month{
+            font-size: 1.8rem;
+        }
     </style>
 {% endblock %}
 {% block body %}
@@ -111,37 +114,73 @@ background-color: rgb(0,0,0,0.3); background-blend-mode: overlay; height:250px">
     </div>
     </div>
     <hr>
-    <div class="container">
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-7">
 
-                <div class="form-row cont container shadow border-dark" style="border-radius: 20px 20px">
-                    <input type="email" class="form-control input "  id="email" style="border: none" placeholder="trouver une année">
-                    <a href="#" class="search "><i class="fas fa-search   search"
-                                                   style="color:var(--navColor); margin-top: 15px; margin-left: 15px" ></i></a>
-                </div>
+    <div class="container  align-self-center " style="border-radius: 10px 10px; width:40%">
+        <div class="container bg-warning "  style="border-radius: 10px 10px">
+            <br>
+            <p class="text-center text-white" style="font-size: 2rem">
 
-            </div>
-            <div class="col-3">
-                <div class="float-right">
-                    <a href="#" class="btn border-dark btn-white">
-                        <i class="fas fa-sort-amount-up-alt  float-right"></i>
-                    </a>
-                </div>
-            </div>
-
+                <i class="fas fa-angle-double-left smaller "></i>
+                <span class="text-warning">.................</span>
+                <span>2020</span>
+                <span class="text-warning">.................</span>
+                <i class="fas fa-angle-double-right smaller"></i>
+            </p>
+            <br>
         </div>
+        <div class="container bg-light">
+           <div class="months">
+               <div class="month">Janvier</div>
+               <div class="month">Fevrier</div>
+               <div class="month">Mars</div>
+               <div class="month">Avril</div>
+               <div class="month">Mais</div>
+               <div class="month">Juin</div>
+               <div class="month">Juillet</div>
+               <div class="month">Aout</div>
+               <div class="month">Septembre</div>
+               <div class="month">October</div>
+               <div class="month">Novembre</div>
+               <div class="month">Decembre</div>
 
 
-    <br>
-    <table class="table table-responsive-sm table-bordered" id="table">
-        <thead>
-        <tr class="">
-            <th scope="col" class="shadow page-link " > <a href="/month" class="text-dark">2001 <i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col " class="shadow page-link"> <a href="/month" class="text-dark">2002<i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link"> <a href="/month" class="text-dark">2003<i class="fas fa-angle-double-right float-right"></i></a></th>
-            <th scope="col" class="shadow page-link"> <a href="/month" class="text-dark">2004<i class="fas fa-angle-double-right float-right"></i></a></th>
+
+
+
+           </div>
+        </div>
+    </div>
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-2"></div>#}
+{#            <div class="col-7">#}
+
+{#                <div class="form-row cont container shadow border-dark" style="border-radius: 20px 20px">#}
+{#                    <input type="email" class="form-control input "  id="email" style="border: none" placeholder="trouver une année">#}
+{#                    <a href="#" class="search "><i class="fas fa-search   search"#}
+{#                                                   style="color:var(--navColor); margin-top: 15px; margin-left: 15px" ></i></a>#}
+{#                </div>#}
+
+{#            </div>#}
+{#            <div class="col-3">#}
+{#                <div class="float-right">#}
+{#                    <a href="#" class="btn border-dark btn-white">#}
+{#                        <i class="fas fa-sort-amount-up-alt  float-right"></i>#}
+{#                    </a>#}
+{#                </div>#}
+{#            </div>#}
+
+{#        </div>#}
+
+
+{#    <br>#}
+{#    <table class="table table-responsive-sm table-bordered" id="table">#}
+{#        <thead>#}
+{#        <tr class="month">#}
+{#            <th scope="col" class="shadow page-link " > <a href="/month" class="text-dark">2001 <i class="fas fa-angle-double-right float-right"></i></a></th>#}
+{#            <th scope="col " class="shadow page-link"> <a href="/month" class="text-dark">2002<i class="fas fa-angle-double-right float-right"></i></a></th>#}
+{#            <th scope="col" class="shadow page-link"> <a href="/month" class="text-dark">2003<i class="fas fa-angle-double-right float-right"></i></a></th>#}
+{#            <th scope="col" class="shadow page-link"> <a href="/month" class="text-dark">2004<i class="fas fa-angle-double-right float-right"></i></a></th>#}
 {#            <th scope="col" class="shadow page-link">2005<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
 {#            <th scope="col" class="shadow page-link">2006<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
 {#            <th scope="col" class="shadow page-link">2007<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
@@ -150,10 +189,10 @@ background-color: rgb(0,0,0,0.3); background-blend-mode: overlay; height:250px">
 {#            <th scope="col" class="shadow page-link">2010<a href="/month"><i class="fas fa-angle-double-right float-right"></i></a></th>#}
 
 
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
+{#        </tr>#}
+{#        </thead>#}
+{#        <tbody>#}
+{#        <tr>#}
 {#            <th scope="row">#}
 {#                                    <label class="switch">#}
 {#                                        <input type="checkbox" checked>#}
@@ -213,9 +252,9 @@ background-color: rgb(0,0,0,0.3); background-blend-mode: overlay; height:250px">
 {#            </td>#}
 {#        </tr>#}
 
-        </tbody>
-    </table>
-    <br>
+{#        </tbody>#}
+{#    </table>#}
+{#    <br>#}
 {#    <table class="table table-responsive-sm table-bordered" id="table">#}
 {#        <thead>#}
 {#        <tr>#}

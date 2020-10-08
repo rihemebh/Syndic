@@ -11,8 +11,10 @@
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/cache" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/collections" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/data-fixtures" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/dbal" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/doctrine-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/doctrine-fixtures-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/doctrine-migrations-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/inflector" />
@@ -24,6 +26,9 @@
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/reflection" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/doctrine/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/knplabs/knp-components" />
+      <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/knplabs/knp-paginator-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/laminas/laminas-code" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/laminas/laminas-eventmanager" />
       <excludeFolder url="file://$MODULE_DIR$/syndic_BD/vendor/laminas/laminas-zendframework-bridge" />
