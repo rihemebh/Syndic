@@ -19,7 +19,7 @@ class Worker extends Fixture
             $worker->setName( $faker->firstName." ".$faker->lastName );
             $worker->setJob($faker->jobTitle);
             $worker->setContractType($faker->randomElement($array = array ('CDI','CDD')));
-            $worker->setNumTel($faker->e164PhoneNumber);
+            $worker->setNumTel($faker->biasedNumberBetween($min = 22222222, $max = 99999999, $function = 'sqrt'));
             $worker->setCin($faker->biasedNumberBetween($min = 22222222, $max = 99999999, $function = 'sqrt'));
             $worker->setBirthday($faker->dateTime());
             $worker->setAdr($faker->address);

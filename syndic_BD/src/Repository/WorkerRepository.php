@@ -2,8 +2,10 @@
 
 namespace App\Repository;
 
+use App\Entity\WorkerSearch;
 use App\Entity\Worker;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\Query;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -19,17 +21,18 @@ class WorkerRepository extends ServiceEntityRepository
         parent::__construct($registry, Worker::class);
     }
 
-     /**
-      * @return Worker[] Returns an array of Worker objects
-      */
+    /**
+     * @param WorkerSearch $search
+     * @return Query
+     */
 
-    public function findByExampleField($search)
+    public function findByField(WorkerSearch $search) :Query
     {
-        $query=$this->createQueryBuilder('w');
-        if($search->getName()){
+        $query=$this->createQueryBuilder('w')
+            ->select('w');
              $query= $query->andWhere('w.name LIKE :val ')
                  ->setParameter('val', '%'.$search->getName().'%');
-        }
+
         if($search->getJob()){
             $query= $query->andWhere( 'w.job LIKE :job')
                 ->setParameter('job', '%'.$search->getJob().'%');
@@ -38,9 +41,7 @@ class WorkerRepository extends ServiceEntityRepository
             $query= $query->andWhere(' w.cin LIKE :cin')
                 ->setParameter('cin', '%'.$search->getCin().'%');
         }
-            $query=$query->getQuery()
-            ->getResult()
-        ;
+            $query=$query->getQuery();
         return $query;
     }
    /*

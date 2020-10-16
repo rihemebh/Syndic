@@ -58,31 +58,42 @@ background-color: rgba(0,0,0,.25); background-blend-mode: overlay; height:250px"
                     <div class="row">
                         <div class="col-12 bg-white shadow" style="margin-left: 15px; margin-top:10px; border-radius: 20px 20px">
                             <p ><i class="fas fa-search"></i> Chercher </p>
-
                             {{ form_start(form) }}
+                            <div class="form-rom">
+                                <div class="col">
+                                    <label class="small">Nom ou Prenom :
+                                        {{ form_widget(form.Name) }}
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="small">Travail :
+                                        {{ form_widget(form.job) }}
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <label class="small">CIN :
+                                        {{ form_widget(form.cin) }}
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-warning float-right btn btn-sm"
+                                            style=" margin-bottom: 15px;margin-top: 15px">
+                                        <i class="fas fa-search  search"  ></i>
+                                        chercher</button>
+                                </div>
+                            </div>
+
+
+
+                            <br>
+
                             {{ form_end(form) }}
-
-{#                               <label class="small">Nom ou Prenom :#}
-{#                                <input type="email" class="form-control input" id="email">#}
-{#                                </label>#}
-{#                            <label class="small">Travail :#}
-
-{#                                <input type="email" class="form-control input"  id="email" ></label>#}
-
-{#                            <label class="small">CIN :#}
-{#                                <input type="email" class="form-control input " id="email" >#}
-{#                            </label>#}
-{#                            <br>#}
-{#                            <a href="#" class="btn-warning float-right btn btn-sm" style=" margin-bottom: 15px;margin-top: 15px">#}
-{#                                <i class="fas fa-search  search"  ></i>#}
-{#                                chercher</a>#}
 
                         </div>
 
 
                         <br>
                     </div>
-
 
 
                 </div>

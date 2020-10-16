@@ -2,18 +2,31 @@
 
 
 namespace App\Controller;
-use App\Entity\Search;
+use App\Entity\WorkerSearch;
 use App\Entity\Worker;
+use App\Repository\WorkerRepository;
 use Doctrine\ORM\Tools\Pagination\Paginator;
+use Doctrine\Persistence\ObjectManager;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\SearchType;
+//use Symfony\Component\Form\Extension\Core\Type\SearchType;
+use \App\Form\SearchType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class workerController extends AbstractController
 {
+
+    private $repository;
+
+
+    public function __construct(WorkerRepository $repo)
+    {
+        $this->repository=$repo;
+
+    }
+
     /**
      * @Route("/workers", name="workers")
      * @param PaginatorInterface $paginator
@@ -21,13 +34,10 @@ class workerController extends AbstractController
      * @return Response
      */
     public function index(PaginatorInterface $paginator, Request $request)
-    {   $search= new Search();
+    {   $search= new WorkerSearch();
         $workers=$paginator->paginate(
-            $this->getDoctrine()->getRepository(Worker::class)->findByExampleField($search),
-            $request->query->getInt('page',1), 4
-
-            );
-
+            $this->repository->findByField($search),
+            $request->query->getInt('page',1), 4);
         $form=$this->createForm(SearchType::class, $search);
         $form->handleRequest($request);
         return $this->render('staff/worker.html.twig', [

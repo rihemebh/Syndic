@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\Search;
+use App\Entity\WorkerSearch;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method Search|null find($id, $lockMode = null, $lockVersion = null)
- * @method Search|null findOneBy(array $criteria, array $orderBy = null)
- * @method Search[]    findAll()
- * @method Search[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method WorkerSearch|null find($id, $lockMode = null, $lockVersion = null)
+ * @method WorkerSearch|null findOneBy(array $criteria, array $orderBy = null)
+ * @method WorkerSearch[]    findAll()
+ * @method WorkerSearch[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class SearchRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Search::class);
+        parent::__construct($registry, WorkerSearch::class);
     }
 
     // /**
-    //  * @return Search[] Returns an array of Search objects
+    //  * @return WorkerSearch[] Returns an array of WorkerSearch objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class SearchRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Search
+    public function findOneBySomeField($value): ?WorkerSearch
     {
         return $this->createQueryBuilder('s')
             ->andWhere('s.exampleField = :val')
