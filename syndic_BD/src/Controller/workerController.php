@@ -35,11 +35,12 @@ class workerController extends AbstractController
      */
     public function index(PaginatorInterface $paginator, Request $request)
     {   $search= new WorkerSearch();
+        $form=$this->createForm(SearchType::class, $search);
+        $form->handleRequest($request);
         $workers=$paginator->paginate(
             $this->repository->findByField($search),
             $request->query->getInt('page',1), 4);
-        $form=$this->createForm(SearchType::class, $search);
-        $form->handleRequest($request);
+
         return $this->render('staff/worker.html.twig', [
             'controller_name' => 'workerController',
             'workers'=> $workers,

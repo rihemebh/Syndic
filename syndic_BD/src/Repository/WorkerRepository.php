@@ -30,9 +30,10 @@ class WorkerRepository extends ServiceEntityRepository
     {
         $query=$this->createQueryBuilder('w')
             ->select('w');
+        if($search->getName()){
              $query= $query->andWhere('w.name LIKE :val ')
                  ->setParameter('val', '%'.$search->getName().'%');
-
+        }
         if($search->getJob()){
             $query= $query->andWhere( 'w.job LIKE :job')
                 ->setParameter('job', '%'.$search->getJob().'%');

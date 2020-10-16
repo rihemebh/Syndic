@@ -34,9 +34,10 @@ class WorkerSearch
     /**
      * @param String|null $Name
      */
-    public function setName(string $Name): void
+    public function setName(string $Name): WorkerSearch
     {
         $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -50,9 +51,11 @@ class WorkerSearch
     /**
      * @param int|null $cin
      */
-    public function setCin(int $cin): void
+    public function setCin(int $cin): WorkerSearch
     {
         $this->cin = $cin;
+        return $this;
+
     }
 
     /**
@@ -66,9 +69,10 @@ class WorkerSearch
     /**
      * @param String|null $job
      */
-    public function setJob(string $job): void
+    public function setJob(string $job): WorkerSearch
     {
         $this->job = $job;
+        return $this;
     }
 
 

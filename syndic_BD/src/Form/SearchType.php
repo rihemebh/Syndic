@@ -2,8 +2,9 @@
 
 namespace App\Form;
 
-use App\Entity\Search;
+use App\Entity\WorkerSearch;
 use Doctrine\DBAL\Types\StringType;
+use Doctrine\DBAL\Types\TextType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -14,36 +15,25 @@ class SearchType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', StringType::class, [
-                'required' => false,
-                'label' => 'Nom et Prenom',
-                'attr' => [
-                    'placeholder' => 'Nom et Prenom :'
-                ],
-            ])
+            ->add('Name')
             ->add('cin', IntegerType::class, [
-                'required' => false,
-                'label'=> 'Num Cin',
-                'attr' => [
-                    'placeholder' => 'Cin :'
-                ],
+                'required' => false
             ])
-            ->add('job' , IntegerType::class , [
-        'required' => false,
-        'label'=> 'travail',
-        'attr' => [
-            'placeholder' => 'travail :'
-        ],
-            ])
-        ;
+            ->add('job' );
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Search::class,
-            'method' => 'get',
-            'csrf_protection'=> false,
+            'data_class' => WorkerSearch::class,
+            "method"=>'GET',
+            'cerf_protection'=> false
         ]);
+
     }
+public function getBlockPrefix()
+{
+    return '';
+}
+
 }
