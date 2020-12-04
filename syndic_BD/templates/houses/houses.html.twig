@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Maisons {% endblock %}
+{% block title %}Maisons & Garages{% endblock %}
 
   {% block liItem0 %}
       <a class="nav-link text-dark  " href="/base"><i class="fad fa-home-alt"></i> </a>
@@ -134,22 +134,21 @@ background-color: rgb(0,0,0,0.45); background-blend-mode: overlay; height:250px"
             </tr>
             </thead>
             <tbody>
+            {% for house in houses %}
             <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>Otto</td>
-                <td>Otto</td>
-                <td>Otto</td>
-                <td>Otto</td>
+                <th scope="row">{{ house.appart }}</th>
+                <td>{{ house.immeuble }}</td>
+                <td>name</td>
+                <td>{{ house.price1 }}</td>
+                <td>{{ house.price2 }}</td>
+                <td>{{ house.price3 }}</td>
+                <td>{{ house.dette }}</td>
                 <td>
                   <a href="/histPay">voir paiement</a>
-{#                    <label class="switch">#}
-{#                        <input type="checkbox" checked>#}
-{#                        <span class="slider round"></span>#}
-{#                    </label>#}
+
                 </td>
             </tr>
+            {% endfor %}
 
             </tbody>
         </table>
